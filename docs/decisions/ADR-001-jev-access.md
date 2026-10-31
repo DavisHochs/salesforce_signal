@@ -1,7 +1,7 @@
 # ADR-001: How to reach Jev, and the decision-provider adapter contract
 
 - **Gate:** R0.1
-- **Status:** Proposed
+- **Status:** Accepted by Davis (2026-10-31)
 - **Author:** build agent
 - **Date drafted:** 2026-10-31
 - **Blocks:** D0.3 (Jev key and spend cap), T0.2 (`make smoke-jev`), the Jev adapter, Phase 3
@@ -213,6 +213,6 @@ Adopt the `decide()`-based adapter contract above.
 ## Decision
 
 <!-- Filled in by Davis. -->
-- Decision:
-- Accepted by Davis on:
-- Notes:
+- Decision: Option A
+- Accepted by Davis on: 10/31/2026
+- Notes: I have a TypeSafe account and API key already setup

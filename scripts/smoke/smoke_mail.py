@@ -1,8 +1,6 @@
-"""T0.4 (AUTO-LIVE): a test message arrives in Mailpit, and the chosen email service
-returns a success response.
+"""T0.4 (AUTO-LIVE): a test message sent over SMTP arrives in Mailpit.
 
-The email-service half waits on ADR-003; until then it is reported as "pending"
-and the gate cannot pass.
+Per ADR-003 the project uses Mailpit only, so there is no external email service to check.
 """
 
 from __future__ import annotations
@@ -51,21 +49,13 @@ def main() -> int:
             env("MAIL_TEST_TO", "seed-inbox@ridgeline-outfitters.test"),
             token,
         )
-        mailpit_ok = find_in_mailpit(env("MAILPIT_API_URL", "http://localhost:8025"), token)
+        passed = find_in_mailpit(env("MAILPIT_API_URL", "http://localhost:8025"), token)
     except (OSError, httpx.HTTPError) as exc:
-        mailpit_ok = False
-        details["mailpit_error"] = str(exc)
-    details["mailpit"] = "pass" if mailpit_ok else "fail"
+        passed = False
+        details["error"] = str(exc)
 
-    # Service adapter is added once ADR-003 picks a provider; until then this half is pending.
-    service_ok = False
-    details["email_service"] = env("EMAIL_SERVICE")
-    details["email_service_result"] = "pending: waiting on ADR-003"
-
-    # The gate needs both halves. Exit 0 when Mailpit works so the local half can be checked.
-    write_report("T0.4-smoke-mail", mailpit_ok and service_ok, details)
-    print(f"Mailpit: {details['mailpit']}; email service: {details['email_service_result']}")
-    return 0 if mailpit_ok else 1
+    write_report("T0.4-smoke-mail", passed, details)
+    return 0 if passed else 1
 
 
 if __name__ == "__main__":

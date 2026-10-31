@@ -1,7 +1,7 @@
 # ADR-004: How Salesforce reaches our local services
 
 - **Gate:** R0.4
-- **Status:** Proposed
+- **Status:** Accepted by Davis (2026-10-31)
 - **Author:** build agent
 - **Date drafted:** 2026-10-31
 - **Blocks:** D0.4, Phase 4 Named Credential to the bridge, Resend webhooks (ADR-003)
@@ -122,6 +122,6 @@ Other constraints:
 ## Decision
 
 <!-- Filled in by Davis. -->
-- Decision:
-- Accepted by Davis on:
-- Notes:
+- Decision: Option A
+- Accepted by Davis on: 10/31/2026
+- Notes: ngrok is fine for the MVP and likely will not need any always on live demo capabilities, Id rather this remain more local often and something I can spin up to show as a demo use case rather than some hyper complex always on endeavor

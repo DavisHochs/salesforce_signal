@@ -1,7 +1,7 @@
 # ADR-002: How events get into Salesforce, and the Developer Edition limits that apply
 
 - **Gate:** R0.2
-- **Status:** Proposed
+- **Status:** Accepted by Davis (2026-10-31)
 - **Author:** build agent
 - **Date drafted:** 2026-10-31
 - **Blocks:** Phase 4 publisher, `Cart_Signal__e` design, T0.6 limits worksheet
@@ -125,6 +125,6 @@ T0.6 checks these figures against the real org. `make smoke-sf` already captures
 ## Decision
 
 <!-- Filled in by Davis. -->
-- Decision:
-- Accepted by Davis on:
-- Notes:
+- Decision: Option A
+- Accepted by Davis on: 10/31/2026
+- Notes: Lower effort for just proofing my salesforce context knowledge is preferred

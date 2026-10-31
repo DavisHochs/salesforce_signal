@@ -1,8 +1,8 @@
 """T0.2 (AUTO-LIVE): a canned session returns a typed Choice with only declared labels
 and probabilities summing to 1 (±0.001).
 
-Uses DECISION_PROVIDER from .env. Until ADR-001 is accepted only `mock` is wired up,
-which proves the harness; the gate only passes when run with DECISION_PROVIDER=jev.
+Uses DECISION_PROVIDER from .env. The gate only passes when run with DECISION_PROVIDER=jev
+(TypeSafe direct API, ADR-001); `mock` just proves the harness.
 """
 
 from __future__ import annotations

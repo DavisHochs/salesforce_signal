@@ -59,6 +59,6 @@ def test_mock_is_deterministic():
     assert a == b
 
 
-def test_jev_waits_on_adr():
-    with pytest.raises(RuntimeError, match="ADR-001"):
-        get_provider("jev")
+def test_unknown_provider_rejected():
+    with pytest.raises(ValueError, match="unknown"):
+        get_provider("nope")

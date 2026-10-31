@@ -1,7 +1,7 @@
 # ADR-003: Email delivery, and where open and click events come from
 
 - **Gate:** R0.3
-- **Status:** Proposed
+- **Status:** Accepted by Davis (2026-10-31)
 - **Author:** build agent
 - **Date drafted:** 2026-10-31
 - **Blocks:** D0.4 (email account), T0.4 (`make smoke-mail`), the Phase 4 sender bridge,
@@ -102,6 +102,6 @@ And, stated explicitly: **where do open and click events come from?**
 ## Decision
 
 <!-- Filled in by Davis. -->
-- Decision:
-- Accepted by Davis on:
-- Notes:
+- Decision: Option A only
+- Accepted by Davis on: 10/31/2026
+- Notes: Let's stick to the simulated context for now, we can address later what this demo should really be capable of doing/showing

@@ -1,7 +1,7 @@
 # ADR-005: Dashboard tool
 
 - **Gate:** R0.5
-- **Status:** Proposed
+- **Status:** Accepted by Davis (2026-10-31)
 - **Author:** build agent
 - **Date drafted:** 2026-10-31
 - **Blocks:** Phase 6 dashboard, R6.2 portfolio format
@@ -96,6 +96,6 @@ The criterion: **easy to show on a portfolio site.**
 ## Decision
 
 <!-- Filled in by Davis. -->
-- Decision:
-- Accepted by Davis on:
-- Notes:
+- Decision: Option A and B
+- Accepted by Davis on: 10/31/2026
+- Notes: Github pages is fine, streamlit is good too, less worried about it needing to be always live again. I want the core to be usable I can always just record a demo video of what is happening for the portfolio if needed
