@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# Secrets: only .env.example is committed
+.env
+.env.*
+!.env.example
+
+# Local data and databases
+*.duckdb
+*.duckdb.wal
+data/raw/
+data/tmp/
+
+# Salesforce CLI local state
+.sf/
+.sfdx/
+salesforce/.sf/
+salesforce/.sfdx/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
