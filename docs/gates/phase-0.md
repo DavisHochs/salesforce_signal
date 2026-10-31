@@ -9,11 +9,11 @@
 
 | Gate | ADR | Status |
 | --- | --- | --- |
-| R0.1 Jev access | ADR-001 | Not started |
-| R0.2 Event ingestion into Salesforce | ADR-002 | Not started |
-| R0.3 Email and engagement | ADR-003 | Not started |
-| R0.4 Hosting | ADR-004 | Not started |
-| R0.5 Dashboard | ADR-005 | Not started |
+| R0.1 Jev access | [ADR-001](../decisions/ADR-001-jev-access.md) | Proposed: Vercel AI Gateway now, join TypeSafe waitlist in parallel |
+| R0.2 Event ingestion into Salesforce | [ADR-002](../decisions/ADR-002-salesforce-ingestion.md) | Proposed: Platform Events over REST; Data 360 Ingestion for Phase 5 only |
+| R0.3 Email and engagement | [ADR-003](../decisions/ADR-003-email-and-engagement.md) | Proposed: Mailpit + Resend free tier; simulated and webhook engagement, labeled separately |
+| R0.4 Hosting | [ADR-004](../decisions/ADR-004-hosting.md) | Proposed: ngrok free plan, bridge only |
+| R0.5 Dashboard | [ADR-005](../decisions/ADR-005-dashboard.md) | Proposed: static page on GitHub Pages |
 
 ### DevOps (Davis)
 
